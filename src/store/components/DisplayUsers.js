@@ -10,10 +10,6 @@ const DisplayUsers = () => {
     dispatch(getUsers());
   }, [dispatch]);
 
-  // useEffect(() => {
-  //   dispatch(getUsers());
-  // }, [getUsers()]);
-
   return (
     <>
       { isLoading === true ? (
