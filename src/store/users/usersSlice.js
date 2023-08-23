@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const url = 'https://randomuser.me/apif/?resultsrtr=5';
+const url = 'https://randomuser.me/api/?results=5';
 
 export const getUsers = createAsyncThunk(
   'users/getUsers',
