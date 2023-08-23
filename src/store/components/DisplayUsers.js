@@ -19,7 +19,10 @@ const DisplayUsers = () => {
       { isLoading === true ? (
         <p>The users list is loading!</p>
       ) : error ? (
-        <p>Something went wrong!</p>
+        <p>Something went wrong!
+          <br />
+          { error }
+        </p>
       ) : (
         <ul>
         {users.map((user) => (
